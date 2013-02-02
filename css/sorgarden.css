@@ -1,0 +1,106 @@
+/*
+Info: This is the css for sorgarden
+Author: Christoffer Larsson
+*/
+
+body{
+	overflow-y: scroll;
+}
+
+h1,h2,h3{
+	font-family: 'Open Sans', sans-serif;
+}
+
+a{
+	color: #555;
+}
+
+#page{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.container-fluid{
+
+}
+
+/* HEADER */
+#masthead{
+	margin: 0 0 16px 0;
+	text-align: center;
+}
+
+/* MENU */
+
+.menu-primary ul{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background: #f5f5f5;
+	width: 100%;
+}
+
+.menu-primary ul li{
+	float: left;
+}
+
+.menu-primary ul li a{
+	display: block;
+	line-height: 40px;
+	padding: 0 8px;
+	text-decoration: none;
+}
+
+.menu-primary ul li a:hover{
+	background: #333;
+	color: #fff;
+}
+
+.menu-primary ul li.current-menu-item a{
+	font-weight: bold;
+}
+
+
+
+.menu-primary .sub-menu{
+	display: none;
+}
+
+/* RESPONSIVE STUFFS */
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+body{
+	
+}
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+body{
+	
+}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+body{
+	
+}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {  
+
+body{
+	
+}
+
+}

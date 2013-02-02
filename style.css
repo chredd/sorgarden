@@ -1,0 +1,28 @@
+/*
+Theme Name: sorgarden
+Theme URI: http://www.sorgarden.org
+Author: Christoffer Larssoon
+Author URI: http://christofferlarsson.se
+Description: Sörgården Kurs & Läger
+Version: 1.0
+License: 
+License:;
+Tags:
+
+*/
+
+
+/* Small menu */
+.menu-toggle {
+	cursor: pointer;
+}
+.main-small-navigation .menu {
+	display: none;
+}
+
+/* Text meant only for screen readers */
+.assistive-text {
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
