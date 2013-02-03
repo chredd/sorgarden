@@ -26,19 +26,21 @@ a{
 
 /* HEADER */
 #masthead{
-	margin: 0 0 16px 0;
+	margin: 0 0 24px 0;
 	text-align: center;
 }
 
 /* MENU */
+.main-navigation{
+	background: #f5f5f5;
+	line-height: 0;
+}
 
 .menu-primary ul{
 	display: inline-block;
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	background: #f5f5f5;
-	width: 100%;
 }
 
 .menu-primary ul li{
@@ -61,10 +63,30 @@ a{
 	font-weight: bold;
 }
 
-
-
 .menu-primary .sub-menu{
 	display: none;
+}
+
+/* LAYOUT */
+
+#secondary{
+	min-height: 700px;
+	border-left: solid 1px #eee;
+	padding: 0 16px 0 0;
+	padding: 0 0 0 24px;
+}
+
+#secondary .widget-title{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.site-footer{
+	padding: 16px 0 0 0;
+	margin: 16px 0 32px 0;
+	border-top: solid 1px #eee;
 }
 
 /* RESPONSIVE STUFFS */
@@ -90,17 +112,41 @@ body{
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 
-body{
-	
-}
+	body{
+		
+	}
+
+	#main-content{
+		width: 100%;
+	}
+
+	#sidebar{
+		width: 100%;
+	}
+
+	#secondary{
+		width: 100%;
+		padding: 24px 0 0 0;
+		margin: 24px 0 0 0;
+		border-left: none;
+		border-top: solid 1px #eee;
+	}
+
+	.alignleft, .alignright{
+		float: none;
+		display: block;
+		text-align: center;
+		margin: 0 auto 8px auto;
+	}
 
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {  
 
-body{
-	
-}
+	body{
+		
+	}
+
 
 }
