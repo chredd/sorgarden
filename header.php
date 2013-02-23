@@ -38,7 +38,7 @@
 					<h1 class="assistive-text"><?php _e( 'Menu', 'sorgarden' ); ?></h1>
 					<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sorgarden' ); ?>"><?php _e( 'Skip to content', 'sorgarden' ); ?></a></div>
 
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu-primary' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu-primary', 'walker' =>  new ParentWalker() ) ); ?>
 				</nav><!-- .site-navigation .main-navigation -->
 			</header><!-- #masthead .site-header -->
 		</div><!-- .span12 -->

@@ -6,6 +6,8 @@
  * @since sorgarden 1.0
  */
 
+require_once 'inc/ParentWalker.class.php';
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
