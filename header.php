@@ -23,15 +23,26 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="row-fluid top-bar">
+	<nav role="navigation" class="top-navigation">
+		Här har vi lite text
+	</nav>
+</div>
+
 <div id="page" class="hfeed site container-fluid">
-	
+
 	 <div class="row-fluid">
 		<div class="span12">
 			<?php do_action( 'before' ); ?>
 			<header id="masthead" class="site-header" role="banner">
+
 				<hgroup>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+					<h1 class="site-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/sorgarden-logo-2000.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" width="1000" />
+						</a>
+					</h1>
 				</hgroup>
 
 				<nav role="navigation" class="site-navigation main-navigation">
