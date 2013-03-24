@@ -59,12 +59,49 @@ a{
 	color: #fff;
 }
 
-.menu-primary ul li.current-menu-item a{
-	font-weight: bold;
+.menu-primary ul li.current-menu-item > a{
+	background: #666;
+	color: #fff;
 }
 
-.menu-primary .sub-menu{
+.main-navigation ul ul {
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 	display: none;
+	float: left;
+	position: absolute;
+	z-index: 99999;
+
+	background: #f3f3f3;
+	text-align: left;
+}
+
+.main-navigation ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+.main-navigation ul ul li {
+	display: block;
+	clear: both;
+}
+.main-navigation li:hover > a {
+}
+.main-navigation ul ul :hover > a {
+}
+.main-navigation ul ul a:hover {
+}
+.main-navigation ul li:hover > ul {
+	display: block;
+}
+
+
+.main-navigation li.menu-item-parent{
+
 }
 
 /* LAYOUT */
@@ -87,6 +124,16 @@ a{
 	padding: 16px 0 0 0;
 	margin: 16px 0 32px 0;
 	border-top: solid 1px #eee;
+}
+
+/* FOR THE LOOP */
+
+article.post{
+	clear: both;
+	overflow: auto;
+	margin: 0 0 16px 0;
+	padding: 0 0 16px 0;
+	border-bottom: solid 1px #eee;
 }
 
 /* RESPONSIVE STUFFS */
